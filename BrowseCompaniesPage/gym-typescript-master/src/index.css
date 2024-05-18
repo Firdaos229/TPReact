@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  font-family: "Epilogue", sans-serif;
+  @apply text-sky-900;
+  ;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Pour empiler verticalement */
+}
+
+/* Pour aligner les éléments sur la même ligne à partir de 768px de largeur */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+.first-span {
+  font-family: 'Clash Display Variable';
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 52.8px;
+  text-align: center;
+  /* Ajoutez d'autres styles si nécessaire */
+}
+
+.second-span {
+  background-image: linear-gradient(to right, transparent, transparent calc(50% - 5px), #26A4FF, #26A4FF, transparent calc(50% + 5px), transparent);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% 2px;
+  font-family: 'Clash Display Variable';
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 52.8px;
+  text-align: center;
+  color: #26A4FF; /* Couleur de texte blanche */
+  /* Ajoutez d'autres styles si nécessaire */
+}
+
